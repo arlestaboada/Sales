@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sales.Views.LoginPage"
+             BindingContext="{Binding Main,Source={StaticResource Locator}}"
+             Title="Login">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout  
+            Padding="10,20">
+            <Label
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="Meloncita">
+                
+            </Label>
+            <Image Source="luly" WidthRequest="200"></Image>
+            <Grid Margin="0,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="E-Mail">
+                </Label>
+                <Entry
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Keyboard="Email"
+                    Placeholder="Enter your e-mail">
+
+                </Entry>
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="Password">
+
+                </Label>
+                <Entry
+                    Grid.Row="1"
+                    Grid.Column="1"    
+                    IsPassword="True"
+                    Placeholder="Enter your password...">
+
+                </Entry>
+
+            </Grid>
+                <ActivityIndicator>
+
+                </ActivityIndicator>
+                <StackLayout Orientation="Horizontal">
+                <Label 
+                Text="Remenber on this device"
+                HorizontalOptions="StartAndExpand" 
+                VerticalOptions="Center">
+                </Label>
+                <Switch HorizontalOptions="End"></Switch>
+            </StackLayout>
+
+                <Label 
+                 Text="Forgot your password"
+                  HorizontalOptions="Center"
+                  TextColor="Blue"
+                    >
+                    
+                </Label>
+          
+            <StackLayout Margin="40,0">
+                <Button
+                BackgroundColor="Red" 
+                BorderRadius="23"
+                HeightRequest="46"
+                Text ="Login" 
+                TextColor="White">
+
+                </Button>
+                <Button
+                BackgroundColor="Green" 
+                BorderRadius="23" 
+                HeightRequest="46"
+                Text ="Registrarse" 
+                TextColor="White">
+
+                </Button>
+
+            </StackLayout>
+            <StackLayout 
+            Orientation="Horizontal" 
+             HorizontalOptions="Center">
+                <Image 
+                 Source="facebook_logo" 
+                 WidthRequest="100">
+                    
+                </Image>
+                <Image 
+                 Source="twiter_logo"
+                  WidthRequest="100">
+
+                </Image>
+
+            </StackLayout>
+           
+
+
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

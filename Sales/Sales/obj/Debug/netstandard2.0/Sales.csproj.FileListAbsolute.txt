@@ -7,7 +7,7 @@ D:\project\Sales\Sales\Sales\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 D:\project\Sales\Sales\Sales\obj\Debug\netstandard2.0\Sales.csproj.CoreCompileInputs.cache
 D:\project\Sales\Sales\Sales\obj\Debug\netstandard2.0\Sales.AssemblyInfoInputs.cache
 D:\project\Sales\Sales\Sales\obj\Debug\netstandard2.0\Sales.AssemblyInfo.cs
-D:\project\Sales\Sales\Sales\obj\Debug\netstandard2.0\XamlC.stamp
 D:\project\Sales\Sales\Sales\obj\Debug\netstandard2.0\Sales.dll
 D:\project\Sales\Sales\Sales\obj\Debug\netstandard2.0\Sales.pdb
 D:\project\Sales\Sales\Sales\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+D:\project\Sales\Sales\Sales\obj\Debug\netstandard2.0\XamlC.stamp

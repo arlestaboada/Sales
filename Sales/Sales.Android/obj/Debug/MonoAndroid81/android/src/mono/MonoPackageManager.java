@@ -108,6 +108,10 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "Sales.Android.dll" comes first in this list. */
 		"Sales.Android.dll",
 		"FormsViewGroup.dll",
+		"GalaSoft.MvvmLight.dll",
+		"GalaSoft.MvvmLight.Extras.dll",
+		"GalaSoft.MvvmLight.Platform.dll",
+		"Microsoft.Practices.ServiceLocation.dll",
 		"Sales.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",

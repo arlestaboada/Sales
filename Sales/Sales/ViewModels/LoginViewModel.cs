@@ -5,16 +5,15 @@
 namespace Sales.ViewModels
 
 {
-    using System.ComponentModel;
     using System.Windows.Input;
     using GalaSoft.MvvmLight.Command;
+    using Sales.Views;
     using Xamarin.Forms;
-    public class LoginViewModel : INotifyPropertyChanged
+    public class LoginViewModel :BaseViewModel
     {
-        #region Events
-        public event PropertyChangedEventHandler PropertyChanged;
-        #endregion
+
         #region Attributes
+        private string email;
         private string password;
         private bool isRunning;
         private bool isEnable;
@@ -23,8 +22,14 @@ namespace Sales.ViewModels
         #region Properties
         public string Email
         {
-            get;
-            set;
+            get
+            {
+                return this.email;
+            }
+            set
+            {
+                SetValue(ref this.email, value);
+            }
         }
         public string Password
         {
@@ -32,14 +37,7 @@ namespace Sales.ViewModels
                 return this.password;
             }
             set {
-                if (this.password != value)
-                {
-                    this.password = value;
-                    PropertyChanged?.Invoke(
-                        this,
-                        new PropertyChangedEventArgs(nameof(this.Password))
-                        );
-                }
+                SetValue(ref this.password, value);
             }
         }
         public bool IsRunning
@@ -50,15 +48,7 @@ namespace Sales.ViewModels
             }
             set
             {
-                if (this.isRunning != value)
-                {
-                    this.isRunning = value;
-                    PropertyChanged?.Invoke(
-                        this,
-                        new PropertyChangedEventArgs(nameof(this.IsRunning))
-                        );
-                }
-
+                SetValue(ref this.isRunning, value);
             }
         }
         public bool IsRemenbered
@@ -74,17 +64,10 @@ namespace Sales.ViewModels
             }
             set
             {
-                if (this.isEnable != value)
-                {
-                    this.isEnable = value;
-                    PropertyChanged?.Invoke(
-                        this,
-                        new PropertyChangedEventArgs(nameof(this.IsEnabled))
-                        );
-                }
+                SetValue(ref this.isEnable, value);
             }
 
-            }
+        }
         #endregion
 
             #region constructors
@@ -92,6 +75,8 @@ namespace Sales.ViewModels
         {
             this.IsRemenbered = true;
             this.IsEnabled = true;
+            this.Email = "arles@gmail.com";
+            this.Password = "1234";
 
 
         }
@@ -146,13 +131,11 @@ namespace Sales.ViewModels
             }
             this.IsRunning = false;
             this.IsEnabled = true;
-            await Application.Current.MainPage.DisplayAlert(
-                                "OK",
-                                "yaaaaay",
-                                "Accept");
-        
+            this.Email = string.Empty;
+            this.Password = string.Empty;
 
-
+            MainViewModel.GetInstance().Lands = new LandsViewModel();
+            await Application.Current.MainPage.Navigation.PushAsync(new LandsPage());
 
 
         }

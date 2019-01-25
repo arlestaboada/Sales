@@ -32,3 +32,6 @@ netstandard
 System.ComponentModel
 System.Resources.ResourceManager
 System.Reflection.Extensions
+Newtonsoft.Json
+Plugin.Connectivity.Abstractions
+Plugin.Connectivity

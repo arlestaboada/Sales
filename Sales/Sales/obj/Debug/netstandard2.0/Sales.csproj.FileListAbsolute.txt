@@ -11,3 +11,4 @@ D:\project\Sales\Sales\Sales\obj\Debug\netstandard2.0\Sales.dll
 D:\project\Sales\Sales\Sales\obj\Debug\netstandard2.0\Sales.pdb
 D:\project\Sales\Sales\Sales\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
 D:\project\Sales\Sales\Sales\obj\Debug\netstandard2.0\Views\LandsPage.xaml.g.cs
+D:\project\Sales\Sales\Sales\obj\Debug\netstandard2.0\XamlC.stamp

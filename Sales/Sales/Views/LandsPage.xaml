@@ -3,15 +3,70 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Sales.Views.LandsPage"
              BindingContext="{Binding Main,Source={StaticResource Locator}}"
+             BackgroundColor="Silver"
              Title="Lands">
     <ContentPage.Content>
         <StackLayout Padding="5"
                      BindingContext="{Binding Lands}">
-            <Label
-                Text="Lands page"
-                FontSize="Large">
+            <SearchBar
+                BackgroundColor="Silver"
+                Text="{Binding Filter,Mode=TwoWay}"
+                Placeholder="Search.."
+                SearchCommand="{Binding  SearchCommand}">
                 
-            </Label>
+            </SearchBar>
+            <ListView
+                BackgroundColor="Silver"
+                HasUnevenRows="True"
+                IsPullToRefreshEnabled="True"
+                IsRefreshing="{Binding IsRefreshing,Mode=TwoWay}"
+                ItemsSource="{Binding Lands}"
+                SeparatorVisibility="None"
+                RefreshCommand="{Binding RefreshCommand}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                          
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <StackLayout 
+                                     Grid.Column="0"
+                                    VerticalOptions="Center">
+                                        <Label
+                                        FontAttributes="Bold"
+                                        FontSize="Medium"
+                                        Text="{Binding Name}"
+                                        TextColor="Black">
+
+
+                                        </Label>
+                                        <Label
+                                        Text="{Binding Capital}"
+                                        TextColor="Black">
+
+                                        </Label>
+
+
+                                    </StackLayout>
+                                    <Image
+                                    Grid.Column="1"
+                                    HorizontalOptions="End"
+                                    Source="ic_chevron_right">
+
+                                    </Image>
+
+                                </Grid>
+                          
+                          
+                        </ViewCell>
+                    </DataTemplate>
+                    
+                </ListView.ItemTemplate>
+                
+            </ListView>
            
         </StackLayout>
     </ContentPage.Content>

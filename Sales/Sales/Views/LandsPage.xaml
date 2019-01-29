@@ -26,7 +26,10 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                          
+                            <Frame 
+                                CornerRadius="20"
+                                HasShadow="True"
+                                Margin="5">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*" />
@@ -59,7 +62,7 @@
                                     </Image>
 
                                 </Grid>
-                          
+                            </Frame>
                           
                         </ViewCell>
                     </DataTemplate>

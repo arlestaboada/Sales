@@ -50,3 +50,4 @@ System.Xml.ReaderWriter
 System.Text.Encoding
 System.Reflection.Primitives
 System.Text.Encoding.Extensions
+CommonServiceLocator

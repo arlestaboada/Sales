@@ -129,9 +129,7 @@ D:\project\Sales\Sales\Sales.Android\obj\Debug\MonoAndroid81\res\drawable-hdpi\i
 D:\project\Sales\Sales\Sales.Android\obj\Debug\MonoAndroid81\res\drawable-xhdpi\ic_chevron_right.png
 D:\project\Sales\Sales\Sales.Android\obj\Debug\MonoAndroid81\res\drawable-xxhdpi\ic_chevron_right.png
 D:\project\Sales\Sales\Sales.Android\obj\Debug\MonoAndroid81\res\drawable-xxxhdpi\ic_chevron_right.png
-D:\project\Sales\Sales\Sales\bin\Debug\netstandard2.0\Sales.dll
 D:\project\Sales\Sales\Sales.Android\obj\Debug\MonoAndroid81\linksrc\Sales.Android.pdb
-D:\project\Sales\Sales\Sales.Android\bin\Debug\Sales.dll.mdb
 D:\project\Sales\Sales\Sales.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.dll.mdb
 D:\project\Sales\Sales\Sales.Android\obj\Debug\MonoAndroid81\linksrc\GalaSoft.MvvmLight.dll.mdb
 D:\project\Sales\Sales\Sales.Android\obj\Debug\MonoAndroid81\linksrc\GalaSoft.MvvmLight.Extras.dll.mdb

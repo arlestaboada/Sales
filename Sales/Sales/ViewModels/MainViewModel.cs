@@ -7,11 +7,18 @@ namespace Sales.ViewModels
         #region ViewModels
         public LoginViewModel Login
         {
-            get; set;
+            get;
+            set;
         }
         public LandsViewModel Lands
         {
-            get; set;
+            get;
+            set;
+        }
+        public LandViewModel Land
+        {
+            get;
+            set;
         }
         #endregion
         #region constructor

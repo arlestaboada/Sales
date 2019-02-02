@@ -1,8 +1,8 @@
+CommonServiceLocator
 FormsViewGroup
 GalaSoft.MvvmLight
 GalaSoft.MvvmLight.Extras
 GalaSoft.MvvmLight.Platform
-Microsoft.Practices.ServiceLocation
 Newtonsoft.Json
 Plugin.Connectivity.Abstractions
 Plugin.Connectivity
@@ -32,12 +32,12 @@ Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 netstandard
+System.Resources.ResourceManager
+System.Diagnostics.Debug
 System.ComponentModel
 System.Collections
-System.Resources.ResourceManager
 System.Threading
 System.Globalization
-System.Diagnostics.Debug
 System.Reflection.Extensions
 System.ObjectModel
 System.Threading.Tasks
@@ -50,4 +50,3 @@ System.Xml.ReaderWriter
 System.Text.Encoding
 System.Reflection.Primitives
 System.Text.Encoding.Extensions
-CommonServiceLocator

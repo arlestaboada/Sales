@@ -107,11 +107,11 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "Sales.Android.dll" comes first in this list. */
 		"Sales.Android.dll",
+		"CommonServiceLocator.dll",
 		"FormsViewGroup.dll",
 		"GalaSoft.MvvmLight.dll",
 		"GalaSoft.MvvmLight.Extras.dll",
 		"GalaSoft.MvvmLight.Platform.dll",
-		"Microsoft.Practices.ServiceLocation.dll",
 		"Newtonsoft.Json.dll",
 		"Plugin.Connectivity.Abstractions.dll",
 		"Plugin.Connectivity.dll",

@@ -23,7 +23,7 @@ namespace Sales.Models
         public List<string> AltSpellings { get; set; }
         [JsonProperty(PropertyName = "region")]
         public string Region { get; set; }
-        [JsonProperty(PropertyName = " subregion")]
+        [JsonProperty(PropertyName = "subregion")]
         public string Subregion { get; set; }
         [JsonProperty(PropertyName = "population")]
         public int Population { get; set; }
@@ -37,7 +37,7 @@ namespace Sales.Models
         public double ? Gini { get; set; }
         [JsonProperty(PropertyName = "timezones")]
         public List<string> Timezones { get; set; }
-        [JsonProperty(PropertyName = "borders ")]
+        [JsonProperty(PropertyName = "borders")]
         public List<string> Borders { get; set; }
         [JsonProperty(PropertyName = "nativeName")]
         public string NativeName { get; set; }

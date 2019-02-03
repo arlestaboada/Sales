@@ -1,9 +1,24 @@
 ﻿
 
+
+
 namespace Sales.ViewModels
 {
+    using System.Collections.Generic;
+    using Sales.Models;
     public class MainViewModel
     {
+        
+      
+
+        #region Properties
+        public List<Land> LandsList
+        {
+            get;
+            set;
+        }
+
+        #endregion
         #region ViewModels
         public LoginViewModel Login
         {
